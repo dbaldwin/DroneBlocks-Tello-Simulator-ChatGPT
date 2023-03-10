@@ -13,7 +13,7 @@ https://coding-sim.droneblocks.io/
 ## Clone this repo
 
 ```
-git glone https://github.com/dbaldwin/DroneBlocks-Tello-Simulator-ChatGPT
+git clone https://github.com/dbaldwin/DroneBlocks-Tello-Simulator-ChatGPT
 ```
 
 ## Update config.json

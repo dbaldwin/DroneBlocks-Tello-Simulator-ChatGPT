@@ -70,6 +70,8 @@ print(f"Initializing drone...")
 
 drone = SimulatedDrone(config["DRONEBLOCKS_SIM_KEY"])
 
+dict_of_corners = {'origin': [0, 0], 'front right corner': [1000, -1000], 'front left corner': [1000, 1000], 'back left corner': [-1000, 1000], 'back right corner': [-1000, -1000]}
+
 print(f"Done.")
 
 with open(args.prompt, "r") as f:

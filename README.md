@@ -10,5 +10,8 @@ Activate your virtual environment:
 Win: .\venv\Scripts\activate
 Mac: source venv/bin/activate
 
+Install dependencies:
+pip install -r requirements.txt
+
 Run the following:
 python chatgpt_droneblocks_simulator.py

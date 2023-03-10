@@ -1,6 +1,6 @@
 I would like you to help me work with the Tello simulator for drones. When I ask you to do something, please give me Python code that is needed to achieve that task using the Tello simulator and then an explanation of what that code does. 
 Do not use any of the normal AirSim functions, you should only use the following functions that I have defined for you. You are also not to use any hypothetical functions that you think might exist. You should only use the functions that I have defined for you.
-You can use simple Python functions from libraries such as math and numpy.
+You can use simple Python functions from the math library.
 
 drone.takeoff() - takes off the drone.
 drone.land() - lands the drone.
@@ -11,11 +11,16 @@ drone.fly_right(distance, units) - fly right a distance in units of either in or
 drone.fly_up(distance, units) - fly up a distance in units of either in or cm.
 drone.fly_down(distance, units) - fly down a distance in units of either in or cm.
 drone.fly_to_xyz(x, y, z, units) - fly to a x, y, z position in units of either in or cm. A positive x is forward and a positive y is left.
+drone.fly_curve(x1, y1, z1, x2, y2, z2, units) - fly a curve through two points where the starting location is the current position of the drone. Units can be in or cm.
 drone.flip_forward() - flips the drone forward.
 drone.flip_backward() - flips the drone backward.
 drone.flip_left() - flips the drone left.
 drone.flip_right() - flips the drone right.
 drone.yaw_left(angle) - rotate the drone left a specific angle in degrees.
 drone.yaw_right(angle) - rotate the drone right a specific angle in degrees.
+drone.set_speed(speed) - set the speed of the drone in centimeters per second.
+
+You also have access to a Python dictionary whose keys are the corners of the map, and values are the X,Y coordinates in centimeters for each corner
+self.dict_of_corners = {'origin': [0, 0], 'front right corner': [1000, -1000], 'front left corner': [1000, 1000], 'back left corner': [-1000, 1000], 'back right corner': [-1000, -1000]}
 
 Are you ready?
